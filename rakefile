@@ -1,0 +1,12 @@
+# load all framework and gems
+load ::File.expand_path(File.join("..", "application.rb"), __FILE__)
+
+# Make sure the server doesn't start
+NO_PLEZI_AUTO_START = true
+
+# create a default task
+desc "The default task will simply remind you to call 'rake -T'."
+task :default do
+  puts "I don't know what to do. Please choose a task..."
+  puts "You can print a list of all avaiulable tasks using: rake -T"
+end

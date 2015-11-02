@@ -33,7 +33,7 @@ Iodine::Http.session_token = 'appname_uui'
 # Iodine.processes = 4
 
 # load all config files
-Dir[File.join "{config}", "**" , "*.rb"].each {|file| load File.expand_path(file)}
+Dir[File.join "{initialize}", "**" , "*.rb"].each {|file| load File.expand_path(file)}
 
 # load all library files
 Dir[File.join "{lib}", "**" , "*.rb"].each {|file| load File.expand_path(file)}
